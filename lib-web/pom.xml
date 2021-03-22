@@ -46,6 +46,12 @@
                 <version>2.1.4</version>
                 <type>jar</type>
             </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.49</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
