@@ -1,11 +1,13 @@
 package com.herb.lib.dao.mapper.book;
 
-import com.herb.lib.api.model.book.BookClassDTO;
 import com.herb.lib.api.model.book.BookDTO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+/**
+ * @author wuyang
+ */
 @Mapper
 public interface BookMapper {
 

@@ -1,5 +1,6 @@
 package com.herb.lib.dao.mapper.borrow;
 
+import com.herb.lib.api.model.borrow.BookBorrowDTO;
 import org.apache.ibatis.annotations.Mapper;
 
 /**借书还书接口层
@@ -7,5 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface BookBorrowMapper {
+
+    int insert(BookBorrowDTO bookBorrowDTO);
 
 }

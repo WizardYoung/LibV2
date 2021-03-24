@@ -1,6 +1,7 @@
 package com.herb.lib.api.model;
 
 
+import com.herb.lib.api.enums.ValidFlagEnum;
 import lombok.Data;
 
 import java.util.Date;
@@ -41,6 +42,6 @@ public class BaseDTO {
     /**
      * 出有效标记版
      */
-    private String validFlag;
+    private ValidFlagEnum validFlag;
 
 }

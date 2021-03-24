@@ -35,7 +35,7 @@ public class BookBorrowDTO extends BaseDTO {
     /**
      * 借阅数量
      */
-    private int count;
+    private int borrowCount;
 
     /**
      * 借书时间

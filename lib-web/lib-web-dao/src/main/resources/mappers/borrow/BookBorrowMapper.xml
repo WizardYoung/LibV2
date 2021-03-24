@@ -14,7 +14,7 @@
         <result column="user_name" property="userName" />
         <result column="book_id" property="bookId" />
         <result column="book_name" property="bookName" />
-        <result column="count" property="count" />
+        <result column="borrow_count" property="borrowCount" />
         <result column="start_date" property="startDate" />
         <result column="end_date" property="endDate" />
         <result column="price" property="price" />
@@ -29,8 +29,24 @@
     </resultMap>
 
     <sql id="base_column">
-        id,user_id,user_name,book_id,book_name,count,start_date,end_date,price,trade_fee,tmp1,tmp2,create_date,update_date,valid_flag
+        id,user_id,user_name,book_id,book_name,borrow_count,start_date,end_date,price,trade_fee,tmp1,tmp2,create_date,update_date,valid_flag
     </sql>
+
+    <insert id="insert">
+        INSERT INTO book_borrow(user_id,user_name,book_id,book_name,borrow_count,start_date,end_date,price,trade_fee,create_date,valid_flag)
+        values
+        (#{userId},
+        #{userName},
+        #{bookId},
+        #{bookName},
+        #{borrowCount},
+        #{startDate},
+        #{endDate},
+        #{price},
+        #{tradeFee},
+        #{createDate},
+        #{validFlag})
+    </insert>
 
 
 </mapper>
